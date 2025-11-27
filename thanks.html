@@ -9,67 +9,52 @@
         body {
             font-family: Arial, sans-serif;
             background: #f8f9fa;
-            color: #333;
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px;
         }
 
-        .container {
-            max-width: 500px;
+        .box {
+            max-width: 480px;
             margin: auto;
-            background: white;
-            padding: 40px 30px;
+            background: #ffffff;
+            padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
         }
 
         h1 {
-            font-size: 28px;
             color: #28a745;
         }
 
-        p {
-            font-size: 17px;
-            margin: 15px 0;
-        }
-
-        .loading {
-            margin-top: 25px;
-            font-size: 16px;
-            color: #555;
-        }
-
         .spinner {
+            width: 40px;
+            height: 40px;
             margin: 20px auto;
-            width: 45px;
-            height: 45px;
-            border: 4px solid #ddd;
+            border: 4px solid #ccc;
             border-top: 4px solid #28a745;
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
 
         @keyframes spin {
-            from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="box">
         <h1>Thank You!</h1>
-        <p>Your information has been received successfully.</p>
-        <p>You will now be redirected to WhatsApp so we can finalize your matchmaking.</p>
-
+        <p>Your submission was received successfully.</p>
+        <p>Redirecting you to WhatsApp…</p>
         <div class="spinner"></div>
-        <p class="loading">Redirecting you to WhatsApp…</p>
     </div>
 
-    <!-- ✅ 100% Working WhatsApp Redirect -->
     <script>
+        // Redirect after 1.5 seconds
         setTimeout(function() {
-            window.location.href = "https://wa.me/message/IQU6CTYPM7KIB1";
+            window.location.href =
+                "https://wa.me/254707775336?text=Hello%2C%20I%20just%20submitted%20my%20details.%20Please%20assist%20me%20to%20finalize.";
         }, 1500);
     </script>
 
